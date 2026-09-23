@@ -25,3 +25,5 @@ include(":integrations:location")
 include(":integrations:nfc")
 include(":integrations:usb")
 include(":integrations:iot")
+
+include(":platform:securestorage")
