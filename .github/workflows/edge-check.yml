@@ -17,5 +17,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 24
-      - run: npm install --ignore-scripts
+          cache: npm
+          cache-dependency-path: edge/package-lock.json
+      - run: npm ci --ignore-scripts
       - run: npm run check
