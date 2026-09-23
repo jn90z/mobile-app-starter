@@ -8,8 +8,8 @@ import android.os.ParcelUuid
 import java.util.UUID
 
 @SuppressLint("MissingPermission")
-class AndroidBleController(context: Context) : BleController {
-    private val manager=context.getSystemService(BluetoothManager::class.java)
+class AndroidBleController(private val appContext: Context) : BleController {
+    private val manager=appContext.getSystemService(BluetoothManager::class.java)
     private val adapter get()=manager.adapter
     private var callback:ScanCallback?=null
     private var gatt:BluetoothGatt?=null
@@ -20,7 +20,7 @@ class AndroidBleController(context: Context) : BleController {
         adapter.bluetoothLeScanner?.startScan(callback)
     }
     override fun stopScan(){ callback?.let{adapter.bluetoothLeScanner?.stopScan(it)}; callback=null }
-    override fun connect(deviceId:String){ gatt?.close(); gatt=adapter.getRemoteDevice(deviceId).connectGatt(context,false,object:BluetoothGattCallback(){
+    override fun connect(deviceId:String){ gatt?.close(); gatt=adapter.getRemoteDevice(deviceId).connectGatt(appContext,false,object:BluetoothGattCallback(){
         override fun onConnectionStateChange(g:BluetoothGatt,s:Int,n:Int){ if(n==BluetoothProfile.STATE_CONNECTED) g.discoverServices() }
         override fun onServicesDiscovered(g:BluetoothGatt,s:Int){ pending?.let{writeNow(g,it.first,it.second,it.third)} }
     }) }
