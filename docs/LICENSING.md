@@ -1,39 +1,43 @@
 # Licensing
 
-## Starter source
+Mobile App Starter is open source under the **Apache License, Version 2.0**.
 
-The source code authored specifically for this repository is proprietary and is
-covered by the root `LICENSE`.
+Copyright 2026 Joseph Niksa.
 
-Copyright (c) 2026 Joseph Niksa. All rights reserved.
+The complete license is in the repository root at `LICENSE`.
 
-The repository being private does not replace a license; the root license states
-the intended rights explicitly.
+## What this permits
 
-## Third-party dependencies
+Subject to the Apache-2.0 terms, the starter can be used, copied, modified,
+distributed, sublicensed, and incorporated into commercial or proprietary
+applications. Apache-2.0 also includes an explicit patent license from
+contributors for applicable patent claims.
 
-Third-party code is not relicensed by the project's proprietary license. See
-`THIRD_PARTY_NOTICES` for the dependency families currently used by the
-starter.
+Applications built from the starter do not have to use Apache-2.0 for all of
+their independently authored application code. Any copied or modified starter
+code must continue to satisfy Apache-2.0's requirements.
 
-## Derived applications
+## Contributions
 
-An application created from this starter should make an explicit licensing
-decision of its own. If it remains private/proprietary, replace the application
-name and copyright information as appropriate. If it is released under an
-open-source license, review which starter-authored portions are being
-relicensed and obtain any permission required to do so.
+Unless explicitly stated otherwise, contributions intentionally submitted for
+inclusion in this project are licensed under Apache-2.0 as described by
+Section 5 of the license.
+
+## Third-party software
+
+Third-party components are not relicensed by this repository. See
+`THIRD_PARTY_NOTICES` and the license metadata/notices supplied by each
+dependency.
 
 ## Release checklist
 
-Before shipping an APK/AAB or publishing source:
+Before shipping a derived APK/AAB or other product:
 
 1. Generate the resolved runtime dependency graph.
 2. Audit direct and transitive dependency licenses.
-3. Preserve required copyright notices and full license texts.
-4. Update `THIRD_PARTY_NOTICES` for dependencies added or removed.
-5. Review Google, Cloudflare, Android/Google Play, and other service terms
-   separately from source-code licenses.
-6. Repeat the audit when major dependencies change.
+3. Preserve required copyright, license, attribution, and NOTICE materials.
+4. Update third-party notices for dependencies added or removed.
+5. Review applicable Google, Cloudflare, app-store, and other service terms.
 
-This file is project documentation, not legal advice.
+This document summarizes the project's licensing structure and is not a
+substitute for the Apache-2.0 license text.
