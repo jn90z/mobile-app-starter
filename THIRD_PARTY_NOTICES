@@ -1,53 +1,23 @@
-THIRD-PARTY SOFTWARE NOTICES
-
 Mobile App Starter
-Copyright (c) 2026 Joseph Niksa. All rights reserved.
+Copyright 2026 Joseph Niksa
 
-This project depends on third-party software. Those components remain subject to
-their respective licenses; the Mobile App Starter proprietary license does not
-replace or restrict rights granted by those third-party licenses.
+This product includes software developed for Mobile App Starter and is
+licensed under the Apache License, Version 2.0.
 
-AndroidX
----------
-This project uses AndroidX libraries, including Core KTX, AppCompat, Credential
-Manager, AndroidX Test, and Espresso components.
+THIRD-PARTY SOFTWARE
 
-Android Open Source Project / AndroidX components are generally distributed
-under the Apache License, Version 2.0. Individual artifacts and transitive
-dependencies remain governed by the license metadata shipped by their
-respective publishers.
+This project depends on third-party software. Those components remain subject
+to their respective licenses and terms.
 
-Kotlin and kotlinx.coroutines
------------------------------
-This project uses Kotlin and kotlinx.coroutines. kotlinx.coroutines is licensed
-under the Apache License, Version 2.0.
+The starter currently uses dependency families including AndroidX, AndroidX
+Credential Manager, AndroidX Test/Espresso, Google Identity/Google ID, Kotlin
+and kotlinx.coroutines, Gradle/Android Gradle Plugin, JUnit, TypeScript,
+Cloudflare Workers tooling/Wrangler, and GitHub Actions.
 
-Google Identity / Google ID
----------------------------
-This project uses Google's Android identity libraries, including the Google ID
-credential integration used with Android Credential Manager. Google-provided
-libraries remain subject to Google's applicable SDK, API, and component terms
-and any notices distributed with those artifacts.
-
-Cloudflare developer tooling
------------------------------
-The backend is designed for Cloudflare Workers and D1 and uses Wrangler during
-development and deployment. Cloudflare services and tooling remain subject to
-their respective terms and licenses.
-
-Build and test tooling
-----------------------
-The project also uses Gradle, Android Gradle Plugin, JUnit, TypeScript, and
-GitHub Actions components. These tools and their transitive dependencies remain
-subject to their own licenses.
-
-NOTICE FOR DISTRIBUTION
------------------------
 Before distributing a production application derived from this starter,
-generate and review the final resolved dependency/license inventory for that
-application. Application-specific dependencies added by downstream projects are
-not covered by this starter's notice.
+generate and review the application's resolved direct and transitive dependency
+license inventory. Preserve any complete license texts, copyright notices,
+NOTICE files, or other attribution required by those dependencies.
 
-Where an applicable third-party license requires inclusion of its complete
-license text or notices with a distributed application, the downstream
-application must preserve those materials.
+Service terms for Google APIs, Google Play/Android services, Cloudflare, GitHub,
+or other hosted services are separate from this source-code license.
