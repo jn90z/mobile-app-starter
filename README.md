@@ -69,3 +69,12 @@ See `LICENSE`, `THIRD_PARTY_NOTICES`, and `docs/LICENSING.md`.
 - `android/SessionStore.kt` — storage abstraction for app bearer sessions.
 - `edge/src/index.ts` — generic identity/session Worker.
 - `edge/migrations/0001_identity.sql` — reusable user/identity/session schema.
+
+
+## Optional platform, integrations and examples
+
+The default app still launches to a blank white screen. The feature modules add
+realtime/network/storage/diagnostics foundations plus Bluetooth, camera,
+location, NFC, USB and capability-based IoT contracts. Reference examples cover
+realtime multi-user events, a minimal multiplayer model, analytics and an
+ESP32/Raspberry Pi controller architecture. See `docs/MODULES.md`.
