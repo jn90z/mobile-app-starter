@@ -1,0 +1,53 @@
+THIRD-PARTY SOFTWARE NOTICES
+
+Mobile App Starter
+Copyright (c) 2026 Joseph Niksa. All rights reserved.
+
+This project depends on third-party software. Those components remain subject to
+their respective licenses; the Mobile App Starter proprietary license does not
+replace or restrict rights granted by those third-party licenses.
+
+AndroidX
+---------
+This project uses AndroidX libraries, including Core KTX, AppCompat, Credential
+Manager, AndroidX Test, and Espresso components.
+
+Android Open Source Project / AndroidX components are generally distributed
+under the Apache License, Version 2.0. Individual artifacts and transitive
+dependencies remain governed by the license metadata shipped by their
+respective publishers.
+
+Kotlin and kotlinx.coroutines
+-----------------------------
+This project uses Kotlin and kotlinx.coroutines. kotlinx.coroutines is licensed
+under the Apache License, Version 2.0.
+
+Google Identity / Google ID
+---------------------------
+This project uses Google's Android identity libraries, including the Google ID
+credential integration used with Android Credential Manager. Google-provided
+libraries remain subject to Google's applicable SDK, API, and component terms
+and any notices distributed with those artifacts.
+
+Cloudflare developer tooling
+-----------------------------
+The backend is designed for Cloudflare Workers and D1 and uses Wrangler during
+development and deployment. Cloudflare services and tooling remain subject to
+their respective terms and licenses.
+
+Build and test tooling
+----------------------
+The project also uses Gradle, Android Gradle Plugin, JUnit, TypeScript, and
+GitHub Actions components. These tools and their transitive dependencies remain
+subject to their own licenses.
+
+NOTICE FOR DISTRIBUTION
+-----------------------
+Before distributing a production application derived from this starter,
+generate and review the final resolved dependency/license inventory for that
+application. Application-specific dependencies added by downstream projects are
+not covered by this starter's notice.
+
+Where an applicable third-party license requires inclusion of its complete
+license text or notices with a distributed application, the downstream
+application must preserve those materials.
