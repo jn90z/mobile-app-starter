@@ -1,3 +1,4 @@
+export { RealtimeRoom } from "./realtime";
 export interface Env {
   APP_DB: D1Database;
   GOOGLE_WEB_CLIENT_ID: string;
