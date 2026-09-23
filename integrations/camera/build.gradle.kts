@@ -9,3 +9,9 @@ android {
     compileOptions { sourceCompatibility=JavaVersion.VERSION_17; targetCompatibility=JavaVersion.VERSION_17 }
     kotlinOptions { jvmTarget = "17" }
 }
+
+dependencies {
+    implementation("androidx.camera:camera-core:1.5.0")
+    implementation("androidx.camera:camera-camera2:1.5.0")
+    implementation("androidx.camera:camera-lifecycle:1.5.0")
+}
