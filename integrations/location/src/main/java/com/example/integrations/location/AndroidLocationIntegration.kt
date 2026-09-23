@@ -6,11 +6,11 @@ import android.location.LocationManager
 import android.os.CancellationSignal
 
 @SuppressLint("MissingPermission")
-class AndroidLocationIntegration(context:Context):LocationIntegration {
-    private val lm=context.getSystemService(LocationManager::class.java)
+class AndroidLocationIntegration(private val appContext:Context):LocationIntegration {
+    private val lm=appContext.getSystemService(LocationManager::class.java)
     override fun current(onResult:(Result<AppLocation>)->Unit){
         val provider=if(lm.isProviderEnabled(LocationManager.GPS_PROVIDER)) LocationManager.GPS_PROVIDER else LocationManager.NETWORK_PROVIDER
-        lm.getCurrentLocation(provider,CancellationSignal(),context.mainExecutor){ l ->
+        lm.getCurrentLocation(provider,CancellationSignal(),appContext.mainExecutor){ l ->
             if(l==null) onResult(Result.failure(IllegalStateException("Location unavailable")))
             else onResult(Result.success(AppLocation(l.latitude,l.longitude,l.accuracy)))
         }
