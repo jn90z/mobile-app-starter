@@ -57,6 +57,11 @@ See `docs/NEW_APP_CHECKLIST.md` and `docs/ARCHITECTURE.md`.
 
 Before production, replace the placeholder package/application IDs and Cloudflare configuration, create Google OAuth clients, configure D1, and provide a Keystore-backed implementation of `SessionStore`.
 
+## License
+
+Licensed under the Apache License, Version 2.0. Copyright 2026 Joseph Niksa.
+See `LICENSE`, `THIRD_PARTY_NOTICES`, and `docs/LICENSING.md`.
+
 ## Reusable source
 
 - `android/GoogleSignIn.kt` — generic Google Credential Manager flow.
